@@ -1,0 +1,72 @@
+@import 'main.scss';
+
+// Layout sidebar
+.demo-logo-vertical {
+    height: 64px;
+    display: grid;
+    place-items: center;
+    color: $color-blue;
+}
+
+Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .header__navlink {
+        margin-right: 1rem;
+    }
+}
+
+.navlink {
+    color: $color-gray;
+    border: 1px solid #ddd;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.jobManage {
+    &__newjob {
+        display: grid;
+        gap: 1rem;
+    }
+}
+.action-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .p-item {
+        padding: 0.2rem;
+        border-radius: 5px;
+    }
+
+    .eye {
+        color: $color-gray;
+        border: 1px solid $color-gray;
+    }
+
+    .edit {
+        color: $color-blue;
+        border: 1px solid $color-blue;
+    }
+
+    .delete {
+        color: $color-reds;
+        border: 1px solid $color-reds;
+    }
+
+    .navlinkEye {
+        border: none;
+    }
+}
+
+// Detailjob
+.space-col{
+    display: grid;
+    gap: 0.3rem;
+}
+
+// DetailCV

@@ -1,0 +1,28 @@
+$font-Poppins: "Poppins", "Inter", system-ui, -apple-system, sans-serif;
+$font-Nunito: "Nunito", "Roboto", system-ui, -apple-system, sans-serif;
+$color-blue: #0A76FF;
+$color-lightblue: #e0eeff;
+$color-reds: rgb(255, 82, 82);
+$color-white: white;
+$color-gray: gray;
+$color-yellow: orange;
+$color-lightyellow: rgb(255, 245, 206);
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body, #root{
+    height: 100%;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+}

@@ -1,0 +1,123 @@
+@import 'main';
+
+// Header
+.ant-layout-header {
+  padding: 0;
+  background: transparent;
+  position: relative;
+  z-index: 1000;
+}
+.ant-drawer .ant-drawer-body{
+  padding: 0;
+}
+/* Header nội bộ */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: $font-Poppins;
+  box-sizing: border-box;
+
+  h1 {
+    color: $color-blue;
+  }
+
+  &__navlink {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .navlink {
+      display: inline-flex;
+      /* inline-flex an toàn hơn */
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      gap: 0.5rem;
+      cursor: pointer;
+      padding: 0 1rem;
+      border-radius: 10px;
+      background: $color-white;
+      color: $color-gray;
+      text-decoration: none;
+    }
+
+    .nav-text {
+      display: inline-block;
+    }
+  }
+}
+
+.ant-layout {
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.ant-layout-content {
+  flex: 1;
+}
+
+
+// Home
+.Home {
+  display: grid;
+  gap: 1rem;
+}
+
+
+// SkillList
+// companylist
+.companylist {
+  &__button {
+    margin-bottom: 1rem;
+  }
+}
+
+
+// CompanyDetail
+.companyDetail {
+  font-family: $font-Nunito;
+
+  &__info {
+    margin-top: 1rem;
+    display: grid;
+    gap: 0.5rem;
+  }
+    &__jobs{
+      display: grid;
+      margin-top: 1rem;
+      gap: 0.5rem;
+        .jobinfo {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+        }
+
+        .jobnavlink {
+          font-weight: bold;
+        }
+    }
+}
+
+// JobDetail
+.jobs {
+  display: grid;
+  gap: 1rem;
+  padding-bottom: 1rem;
+
+  &__detail {
+    display: grid;
+    gap: 0.7rem;
+
+    &-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+  }
+}
+
+// footer
+footer {
+  text-align: center;
+}
