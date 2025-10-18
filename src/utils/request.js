@@ -1,5 +1,5 @@
-const API_DOMAIN = 'http://localhost:3002/';
-
+// const API_DOMAIN = 'http://localhost:3002/';
+const API_DOMAIN = 'https://datacuoicung-cl8m.vercel.app/';
 // Get
 export const Get = async (path) => {
     const res = await fetch(API_DOMAIN + path);
