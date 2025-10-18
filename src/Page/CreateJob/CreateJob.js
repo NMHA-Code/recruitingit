@@ -99,22 +99,23 @@ useEffect(() => {
             </Col>
 
             <Col xs={24} sm={12} lg={6}>
-              <Form.Item
-                label="Mức Lương"
-                name="salary"
-                rules={[{ required: true, message: 'Vui lòng nhập mức lương' }]}
-              >
-                <InputNumber min={0} />
-              </Form.Item>
-            </Col>
-
-            <Col xs={24} sm={12} lg={6}>
               <Form.Item label="Thành phố" name="city" rules={requiredRule}>
                 <Select
                   mode="multiple"
                   options={cities}
                   placeholder="Chọn hoặc nhập thành phố"
                 />
+              </Form.Item>
+            </Col>
+            
+
+            <Col xs={24} sm={12} lg={6}>
+              <Form.Item
+                label="Mức Lương"
+                name="salary"
+                rules={[{ required: true, message: 'Vui lòng nhập mức lương' }]}
+              >
+                <InputNumber min={0}/>
               </Form.Item>
             </Col>
           </Row>

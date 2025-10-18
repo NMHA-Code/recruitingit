@@ -125,6 +125,7 @@ function JobManage() {
           
           <EditOutlined className="edit p-item" onClick={() => showModal(record)} />
           <Modal
+          mask={false}
             title="Chỉnh sửa jobs"
             open={isModalOpen}
             onCancel={() => {

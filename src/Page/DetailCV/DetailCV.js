@@ -16,7 +16,7 @@ function DetailCV() {
         const [allCvs, allJobs] = await Promise.all([GetCV(), GetJob()]);
         const foundCv = allCvs.find(i => String(i.id) === id);
         const foundJob = allJobs.find(i => String(i.id) === String(foundCv.idJob));
-        await EditCV(foundCv.id, { statusRead: true });
+        // await EditCV(foundCv.id, { statusRead: true });
         setCv(foundCv);
         setJob(foundJob);
       } catch (error) {
@@ -24,10 +24,10 @@ function DetailCV() {
       }
     };
     fetchAndMarkRead();
-  }, [id]);
+  }, [id, cv,job]);
 
   if (!cv || !job) {
-    return <div>Không tìm thấy job</div>;
+    return <div>Không tìm thấy Cv</div>;
   }
 
   return (
