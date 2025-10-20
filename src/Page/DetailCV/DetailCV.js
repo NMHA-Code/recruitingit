@@ -24,7 +24,7 @@ function DetailCV() {
       }
     };
     fetchAndMarkRead();
-  }, [id, cv,job]);
+  }, [id]);
 
   if (!cv || !job) {
     return <div>Không tìm thấy Cv</div>;
